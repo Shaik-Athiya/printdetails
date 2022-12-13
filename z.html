@@ -1,0 +1,215 @@
+<!DocType html>
+<html>
+<head>
+<title>REGISTRATION</title>
+<style>
+h3{
+color:red;
+}
+#areInput{
+width:50%;
+height:40px;
+}
+#aeInput{
+width:50%;
+height:40px;
+}
+.sp{
+border:2px solid green;
+width:50%;
+height:50%;
+padding:20px;
+background-color:pink;
+}
+#myDiv{
+width:30%;
+height:50px;
+ word-spacing: 1cm;
+}
+h2{
+color:green;
+}
+.si{
+background-color:skyblue;
+}
+
+</style>
+</head>
+<body>
+<center><h1>Registration</h1>
+<div class="sp" id="9">
+<h2>First Name</h2>    <input id= "userInput"><br><br>
+
+<h2>emailid</h2>       <input id= "maInput"><br><br>
+<h2>H.NO </h2>         <input id= "meInput"><br><br>
+
+<h2>Address </h2>      <input id= "miInput"><br><br>
+
+<h2>State</h2>         <input id= "moInput"><br><br>
+
+<h2>City</h2>          <input id= "mjInput"><br><br>
+
+
+<h2>Mobile-No</h2>     <input id= "mpInput"><br><br>
+
+
+<h2>Objective</h2>     <input id="areInput"><br><br>
+
+<h2>ssc</h2>           <input id="reInput">   <input id="re2Input">  <input id="re3Input"><br><br>
+
+
+<h2>OperatingSystem</h2>  <input id="isInput"><br><br>
+
+<h2>programminglanguages</h2>   <input id="siInput"><br><br>
+
+<h2>Hobbies</h2>          <input id="hoInput">  <input id="ho2Input"> <input id="ho3Input"><br><br>
+
+<h2>Declaration</h2>    <input id="aeInput"><br><br></center></div>
+<center><button onclick="myFunction()">submit</button></center>
+<div class="si">
+<center><h1 id="em"></h1></center>
+
+<p id="md1"></p>
+
+<u><h2 id="demo"></h2>
+
+<h3 id= "message"></h3>
+
+<h3 id= "me"></h3>
+
+<h3 id="ma"></h3>
+
+<h3 id="my"></h3>
+
+<h3 id="mg"></h3>
+
+<h3 id="mk"></h3>
+
+<h3 id="mq"></h3>
+<h3 id="mq"></h3>
+<p id="md"></p>
+
+<h2 id="demo1"></h2>
+
+<p id="im"></p>
+<p id="do"></p>
+
+<h2 id="demo5"></h2>
+<div id="myDiv">
+<h3 id="ne"></h3>
+</div>
+<p id="dd"></p>
+
+
+
+
+
+<h2 id="demo2"></h2>
+<h3 id="qm"></h3>
+
+<h3 id="sm"></h3>
+
+<p id="di"></p>
+
+<h2 id="demo3"></h2>
+
+<h3 id="hm"></h3>
+<p id="le"></p>
+<h2 id="demo4"></h2>
+<h3 id="au"></h3>
+<div></u>
+<script>
+function myFunction( ){
+
+document.getElementById("em").innerHTML = "RESUME";
+
+document.getElementById("md1").style.borderTop = "thick solid #0000FF";
+
+document.getElementById("demo").innerHTML = "Personal Details";
+
+
+let userInput = document.querySelector("#userInput");
+let message = document.querySelector("#message");
+message.innerHTML=" " + userInput.value;
+
+let maInput = document.querySelector("#maInput");
+let me = document.querySelector("#me");
+me.innerHTML=" " + maInput.value;
+
+let meInput = document.querySelector("#meInput");
+let ma = document.querySelector("#ma");
+ma.innerHTML=" " + meInput.value;
+
+
+let miInput = document.querySelector("#miInput");
+let my = document.querySelector("#my");
+my.innerHTML=" " + miInput.value;
+
+let moInput = document.querySelector("#moInput");
+let mg = document.querySelector("#mg");
+mg.innerHTML=" " + moInput.value;
+
+
+let mjInput = document.querySelector("#mjInput");
+let mk = document.querySelector("#mk");
+mk.innerHTML=" " + mjInput.value;
+
+let mpInput = document.querySelector("#mpInput");
+let mq = document.querySelector("#mq");
+mq.innerHTML=" " + mpInput.value;
+ document.getElementById("md").style.borderTop = "thick solid #0000FF";
+
+
+document.getElementById("demo1").innerHTML = "Objectives";
+let areInput = document.querySelector("#areInput");
+let im = document.querySelector("#im");
+im.innerHTML=" " + areInput.value;
+document.getElementById("do").style.borderTop = "thick solid #0000FF";
+
+
+document.getElementById("demo5").innerHTML = "Qualification";
+document.getElementById("myDiv").style.border = "5px solid orange";
+ 
+let reInput = document.querySelector("#reInput");
+let ne = document.querySelector("#ne");
+ne.innerHTML=" " + reInput.value+"           " + re2Input.value+"          " + re3Input.value;
+
+document.getElementById("dd").style.borderTop = "thick solid #0000FF";
+
+
+
+
+
+
+
+
+
+
+document.getElementById("demo2").innerHTML = "Computer Skills";
+let isInput = document.querySelector("#isInput");
+let qm = document.querySelector("#qm");
+qm.innerHTML="operating system: " + isInput.value;
+
+let siInput = document.querySelector("#siInput");
+let sm = document.querySelector("#sm");
+sm.innerHTML="programming-languages: " + siInput.value;
+
+document.getElementById("di").style.borderTop = "thick solid #0000FF";
+
+document.getElementById("demo3").innerHTML = "Hobbies";
+
+let hoInput = document.querySelector("#hoInput");
+let hm = document.querySelector("#hm");
+hm.innerHTML=" " + hoInput.value+" <br> " + ho2Input.value+" <br> " + ho3Input.value;
+
+document.getElementById("le").style.borderTop = "thick solid #0000FF";
+
+document.getElementById("demo4").innerHTML = "Declaration";
+
+let aeInput = document.querySelector("#aeInput");
+let au = document.querySelector("#au");
+au.innerHTML=" " + aeInput.value;
+}
+</script>
+</body>
+</html>

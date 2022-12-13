@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <style>
+        table {
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgb(236, 124, 124);
+            color: rgb(79, 212, 39);
+        }
+        #btn{
+            color: chartreuse;
+            background-color: crimson;
+        }
+
+        #show th{
+            padding: 13px;
+            color:rgb(255, 217, 0);
+  
+        }
+        #show td {
+            padding: 13px;
+            color:aqua;
+        }
+
+        #btna td input {
+            width: 100%;
+        }
+        table,th,td{
+            border-collapse: collapse;
+        }
+        th{
+            padding:30px;
+            
+        }
+        table{
+            border: 1px solid black;
+        width:50%;
+        height:20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <td><input type="text" name="fname" id="fname"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Last Name</th>
+                        <td><input type="text" name="lname" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td><input type="text" name="age" id="age"></td>
+                    </tr>
+    <tr>
+                        <th>DateofBirth</th>
+                        <td><input type="date" name="DateofBirth" id="dob"></td>
+                    </tr>
+    
+                  
+                    <tr>
+                        <th>phoneno</th>
+                        <td><input type="text" name="phno" id="phno"></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td><input type="text" name="addre" id="addre"></td>
+                    </tr>
+                   
+    
+                    <tr>
+                        <th>state</th>
+                        <td><input type="text" name="state" id="sta"></td>
+    
+                    </tr>
+                    <tr>
+                        <th>city</th>
+                        <td><input type="text" name="city" id="cit"></td>
+                    </tr>
+                    <tr>
+                        <th>District</th>
+                        <td><input type="text" name="dis" id="dis"></td>
+    
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td><input type="text" id="gd"></td>
+      
+      
+                    </tr>
+                    <tr>
+                        <th>HouseNo</th>
+                        <td><input type="text" name="house" id="hno"></td>
+                    </tr>
+                    <tr>
+                        <th>SSC Board Name</th>
+                        <td><input type="text" name="sscs" id="ssc"></td>
+                    </tr>
+                
+                
+                    <tr>
+                        <th>CGPA/Percentage</th>
+                        <td><input type="number" name="cgp" id="cgp"></td>
+                    </tr>
+                    <tr>
+                        <th>Year Of Passing</th>
+                        <td><input type="date" name="Year" id="year"></td>
+                    </tr>
+                    <tr>
+                        <th>Intermediate Board Name</th>
+                        <td><input type="text" name="inter" id="int"></td>
+                    </tr>
+                    <tr>
+                        <th>InterCGPA/percentage</th>
+                        <td><input type="number" name="cgpa" id="cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th>Year Of Passing</th>
+                        <td><input type="date" name="pass" id="pass"></td>
+                    </tr>
+    
+                    <tr>
+                        <th>Graduation College Name</th>
+                        <td><input type="text" id="gra"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th>CGPA/percentage</th>
+                        <td><input type="number" name="no" id="no"></td>
+                    </tr>
+                    <tr>
+                        <th>Year Of Passing</th>
+                        <td><input type="date" name="ing" id="ing"></td>
+                    </tr>
+    
+                    <tr>
+                        <th>Marital Status</th>
+                        <td><input type="text" id="ms"</td>
+                    </tr>
+                            <tr>
+                        <th>AdharNumber</th>
+                        <td><input type="text" name="ad" id="ad"></td>
+    
+                    </tr>
+                    <tr>
+                        <th>PAN number </th>
+                        <td><input type="text" name="gender" id="ge"></td>
+                    </tr>
+                    <tr>
+                        <th>Signature</th>
+                        <td><input type="text" placeholder="choosefile" id="sig"></td>
+                    </tr>
+    
+                    <tr id="btna">
+                        <td colspan="2"><input type="button" name="button" id="btn" value="submit" onclick="AddRow()"></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <table id="show">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+    <th> DateofBirth</th>
+                   
+                  <th>phoneno</th>
+    <th>address</th>
+    <th>state</th>
+    <th>city</th>
+    <th>district</th>
+    <th>gender</th>
+    <th>houseno</th>
+    <th>SSC</th>
+    <th>cgpa</th>
+    <th>year</th>
+    <th>inter</th>
+    <th>inter cgpa</th>
+    <th>inter year</th>
+    <th>graduation clg</th>
+    <th>percent</th>
+    <th>year pass</th>
+    <th>marital</th>
+    <th>aadhar</th>
+    <th>pan</th>
+    <th>sign</th>
+    
+      
+                    </tr>
+                </thead>
+            </table>
+        </center>
+        
+        <script>
+            
+            var list1 = [];
+            var list2 = [];
+            var list3 = [];
+            var list4 = [];
+     var list5 = [];
+       var list6 = [];
+    var list7 = [];
+    var list8 = [];
+     var list9 = [];  
+    var list10 = [];                
+    var list11 = []; 
+    var list12 = [];  
+    var list13 = [];                
+    var list14 = [];                
+    var list15 = [];
+    var list16 = [];
+    var list17 = [];
+    var list18 = [];
+    var list19 = [];
+    var list20 = [];
+    var list21 = [];
+    var list22 = [];
+    var list23 = [];
+    var list24 = [];
+    var list25 = [];
+    
+                   var n = 1;
+            var x = 0;
+    
+            function AddRow(){
+    
+                var AddRown = document.getElementById('show');
+                var NewRow = AddRown.insertRow(n);
+    
+                list1[x] = document.getElementById("fname").value;
+                list2[x] = document.getElementById("lname").value;
+                list3[x] = document.getElementById("email").value;
+                list4[x] = document.getElementById("age").value;
+    list5[x] = document.getElementById("dob").value;
+    list6[x] = document.getElementById("phno").value;
+    list7[x] = document.getElementById("addre").value;
+    list8[x] = document.getElementById("sta").value;
+    list9[x] = document.getElementById("cit").value;
+    list10[x] = document.getElementById("dis").value;
+    list11[x] = document.getElementById("gd").value;
+    list12[x] = document.getElementById("hno").value;
+    list13[x] = document.getElementById("ssc").value;
+    list14[x] = document.getElementById("cgp").value;
+    list15[x] = document.getElementById("year").value;  
+    list16[x] = document.getElementById("int").value;
+    list17[x] = document.getElementById("cgpa").value;
+    list18[x] = document.getElementById("pass").value;
+    list19[x] = document.getElementById("gra").value;   
+    list20[x] = document.getElementById("no").value;
+    list21[x] = document.getElementById("ing").value;
+    list22[x] = document.getElementById("ms").value;
+    list23[x] = document.getElementById("ad").value;
+    list24[x] = document.getElementById("ge").value;
+    list25[x] = document.getElementById("sig").value;
+    
+                            var cel1 = NewRow.insertCell(0);
+                var cel2 = NewRow.insertCell(1);
+                var cel3 = NewRow.insertCell(2);
+                var cel4 = NewRow.insertCell(3);
+     var cel5 = NewRow.insertCell(4);
+    var cel6 = NewRow.insertCell(5);
+    var cel7 = NewRow.insertCell(6);
+    var cel8 = NewRow.insertCell(7);
+    var cel9 = NewRow.insertCell(8);
+    var cel10 = NewRow.insertCell(9);
+    var cel11 = NewRow.insertCell(10);
+    var cel12 = NewRow.insertCell(11);
+    var cel13 = NewRow.insertCell(12);
+    var cel14 = NewRow.insertCell(13);
+    var cel15 = NewRow.insertCell(14);
+    var cel16 = NewRow.insertCell(15);
+    var cel17 = NewRow.insertCell(16);
+    var cel18 = NewRow.insertCell(17);
+    var cel19 = NewRow.insertCell(18);
+    var cel20 = NewRow.insertCell(19);
+    var cel21 = NewRow.insertCell(20);
+    var cel22 = NewRow.insertCell(21);
+    var cel23 = NewRow.insertCell(22);
+    var cel24 = NewRow.insertCell(23);
+    var cel25 = NewRow.insertCell(24);
+    
+    
+    
+                cel1.innerHTML = list1[x];
+                cel2.innerHTML = list2[x];
+                cel3.innerHTML = list3[x];
+                cel4.innerHTML = list4[x];
+     cel5.innerHTML = list5[x];
+    cel6.innerHTML = list6[x];
+    cel7.innerHTML = list7[x];
+    cel8.innerHTML = list8[x];
+    cel9.innerHTML = list9[x];  
+    cel10.innerHTML = list10[x];
+    cel11.innerHTML = list11[x];
+    cel12.innerHTML = list12[x];
+    cel13.innerHTML = list13[x];
+    cel14.innerHTML = list14[x];
+    cel15.innerHTML = list15[x];
+    cel16.innerHTML = list16[x];
+    cel17.innerHTML = list17[x];
+    cel18.innerHTML = list18[x];
+    cel19.innerHTML = list19[x];
+    cel20.innerHTML = list20[x];
+    cel21.innerHTML = list21[x];
+    cel22.innerHTML = list22[x];
+    cel23.innerHTML = list23[x];
+    cel24.innerHTML = list24[x];
+    cel25.innerHTML = list25[x];
+    
+    
+    
+               
+                n++;
+                x++;
+            }
+    
+        </script>
+    </body>
+    </html>
